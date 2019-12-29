@@ -146,8 +146,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="double_LinkList.cpp" />
     <ClCompile Include="LinkList.cpp" />
+    <ClCompile Include="LinkQueue.cpp" />
+    <ClCompile Include="LinkStack.cpp" />
     <ClCompile Include="SeqList.cpp" />
+    <ClCompile Include="SeqQueue.cpp" />
+    <ClCompile Include="Stack.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
