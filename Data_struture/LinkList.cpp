@@ -11,8 +11,7 @@ typedef struct Node {
 	ElementType data;
 	struct Node *next;
 }Node, *LinkList;
-//LinkList Îª½á¹¹Ö¸ÕëÀàÐÍ£¬Ö¸ÏòÁËÒ»¸ö½á¹¹£¬ÓëNode±¾ÖÊÉÏÊÇÒ»ÑùµÄ£¬µ«ÊÇÊÇÍ·Ö¸Õë
-//Ò»¸öNodeÓÉ Êý¾ÝÓò ÒÔ¼° Ö¸ÕëÓò ¹¹³É
+
 
 
 LinkList creatList()
@@ -76,7 +75,7 @@ int insertList(LinkList L, int i, ElementType x)
 int deletevalueList(LinkList L, ElementType x)
 {
 	pre = L;
-	p = L->next;//pre ÊÇp µÄÇ°Çý½Úµã
+	p = L->next;//pre ï¿½ï¿½p ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Úµï¿½
 	while (p != NULL || p->data != x)
 	{
 		pre = p;
@@ -95,7 +94,7 @@ int deletevalueList(LinkList L, ElementType x)
 }
 
 
-int deletenumList(LinkList L,int i, ElementType* x) //É¾³ýÖµ´æ·ÅÔÚxµÄÖ¸Õë±äÁ¿ÖÐ
+int deletenumList(LinkList L,int i, ElementType* x) //É¾ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½xï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 {
 	p = locate(L, i - 1);
 	if (p != NULL || i < 1 || p->next = NULL) { return 0; }
@@ -119,7 +118,7 @@ void reverse(LinkList L)
 		p->next = L->next;
 		L->next = p;
 
-		p = q;//Ç°²å·½Ê½
+		p = q;//Ç°ï¿½å·½Ê½
 	}
 }
 
@@ -138,7 +137,7 @@ void mergeList(LinkList LA, LinkList LB) //the result is put in LA
 		if (pa->data <= pb->data) 
 		{
 			r->next = pa;
-			r = pa;//²»»á¿ª±ÙÐÂµÄ¿Õ¼ä£¬¶øÊÇÔÚÏÂÒ»´Î¸Ä±änext
+			r = pa;//ï¿½ï¿½ï¿½á¿ªï¿½ï¿½ï¿½ÂµÄ¿Õ¼ä£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Î¸Ä±ï¿½next
 			pa = pa->next;
 		}
 		else 
